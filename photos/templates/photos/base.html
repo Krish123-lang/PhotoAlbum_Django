@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="{% static 'photos/css/bootstrap.min.css' %}">
+    <style>
+        .image-thumbnail {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .list-group-item a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body class="m-5">
+    {% block content %}
+
+
+    {% endblock content %}
+
+    <script src="{% static 'photos/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'photos/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'photos/js/jquery.slim.min.js' %}"></script>
+
+</body>
+
+</html>
